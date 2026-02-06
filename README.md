@@ -36,7 +36,9 @@ Install the dependencies:
 
 ```bash
 npm install
+npm install framer-motion
 ```
+npm install framer-motion
 
 ### Development
 
