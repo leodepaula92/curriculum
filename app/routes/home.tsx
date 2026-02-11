@@ -51,10 +51,26 @@ const listaCertificados = [
 ];
 
 const listaExperiencias = [
-	{ empresa: "Guimepa", periodo: "2021 – Atualmente", cargo: "ASSISTENTE DE TI SÊNIOR / DESENVOLVEDOR FULL STACK JR", resumo: "Gestão tecnológica total, integração de APIs e desenvolvimento de BI.", descricao: "Na empresa, cuido de toda a parte tecnológica, desde hardware até software. Faço a integração de APIs dos fornecedores no sistema..." },
-	{ empresa: "Centro Educacional (Facin)", periodo: "2018 – 2020", cargo: "Analista de Arquivos", resumo: "Docência técnica multidisciplinar e desenvolvimento de plataforma EAD.", descricao: "Era responsável por preparar e ministrar aulas de Informática básica e avançada..." },
-	{ empresa: "Mega Byte", periodo: "2013 – 2017", cargo: "Professor/Coordenador", resumo: "Coordenação pedagógica, manutenção de infraestrutura e captação de alunos.", descricao: "Era responsável por preparar e ministrar aulas de Informática básica e avançada..." },
-	{ empresa: "IRON MOUNTAIN", periodo: "2011 – 2013", cargo: "Analista de Arquivos", resumo: "Recepção e digitalização de documentos bancários.", descricao: "Fazia recepção e digitalização de documentos bancários..." }
+	{
+		empresa: "Guimepa", periodo: "2021 – Atualmente", cargo: "ASSISTENTE DE TI SÊNIOR / DESENVOLVEDOR FULL STACK JR",
+		resumo: "Gestão tecnológica total, integração de APIs e desenvolvimento de BI.",
+		descricao: "Na empresa, cuido de toda a parte tecnológica, desde hardware até software. Faço a integração de APIs dos fornecedores no sistema e já integrei Vonder, Toyama, Wap, Belfix, Bovenau, CSM, entre outros. Também sou responsável por personalizar o sistema, fazer melhorias, adicionar funções, botões, colunas, filtros... Cuido do site de vendas usando Magento e, recentemente, criei o novo site deltatopferramentas.com.br. Além disso, faço o desenvolvimento e a análise de BI com a ferramenta PowerBI, criando dashboards conforme a necessidade dos setores. Quando é necessário, também auxilio na parte gráfica, criando artes para posts no Instagram, Facebook, LinkedIn, e com anúncios no Google Ads."
+	},
+	{
+		empresa: "Centro Educacional (Facin)", periodo: "2018 – 2020", cargo: "Analista de TI / Educador",
+		resumo: "Docência técnica multidisciplinar e desenvolvimento de plataforma EAD.",
+		descricao: "Era responsável por preparar e ministrar aulas de Informática básica e avançada, Desenvolvimento WEB e Gráfico, Criação de jogos, Marketing Digital (Google ADS, Meta Ads), edição de Vídeos. Também era responsável pela manutenção dos computadores e rede da escola. No período da pandemia desenvolvi uma plataforma EAD para o curso de Pós Graduação na área de medicina deles."
+	},
+	{
+		empresa: "Mega Byte", periodo: "2013 – 2017", cargo: "Professor/Coordenador",
+		resumo: "Coordenação pedagógica, manutenção de infraestrutura e captação de alunos.",
+		descricao: "Era responsável por preparar e ministrar aulas de Informática básica e avançada, Desenvolvimento WEB e Gráfico, Criação de jogos, Marketing Digital (Google ADS, Meta Ads), edição de Vídeos, Administração e gestão, Ministrava palestras. Também era responsável pela manutenção dos computadores e rede da escola, Também fazia campanha e captação de alunos."
+	},
+	{
+		empresa: "IRON MOUNTAIN", periodo: "2011 – 2013", cargo: "Analista de Arquivos",
+		resumo: "Recepção e digitalização de documentos bancários e gestão de sistemas.",
+		descricao: "Fazia recepção e digitalização de documentos bancários, fazia planilhas de controle e atualização nos sistema interno da empresa."
+	}
 ];
 
 const listaSkills = [
