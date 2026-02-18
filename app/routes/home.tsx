@@ -42,12 +42,22 @@ const listaCertificados = [
 	{ id: 10, titulo: "Terminogia do Facebook - FACEBOOK", img: "img/certificados/certificate terminogia facebook.png", tags: ["marketing"] },
 	{ id: 11, titulo: "Selo Devops - MICROSOFT", img: "img/certificados/Selo Devops Microsoft.png", tags: ["devops", "microsoft"] },
 	{ id: 12, titulo: "Análise de Dados e Inteligência de Negócios - GRAN", img: "img/certificados/Analise de Dados - Gran.png", tags: ["dados", "bi"] },
-	{ id: 13, titulo: "PHP Básico ao Avançado - UDEMY", img: "img/certificados/PHP Básico ao Avançado.jpg", tags: ["php", "back end"] },
+	{ id: 13, titulo: "PHP Básico ao Avançado - UDEMY", img: "img/certificados/PHP Básico ao Avançado.jpg", tags: ["php", "back end", "UDEMY"] },
 	{ id: 14, titulo: "Docker - LINKEDIN", img: "img/certificados/Docker 1.jpg", tags: ["docker", "devops"] },
 	{ id: 15, titulo: "Fundamentos de Kubernetes - LINKEDIN", img: "img/certificados/Fundamentos de Kubernetes.jpg", tags: ["kubernetes", "devops"] },
 	{ id: 16, titulo: "IA Computacional - FIAP", img: "img/certificados/IA Computacional.png", tags: ["ia", "dados"] },
 	{ id: 17, titulo: "Práticas Ágeis - ROCKETSEAT", img: "img/certificados/Praticas Ageis - Rocketseat.png", tags: ["agile"] },
 	{ id: 18, titulo: "JSON com C# - MICROSOFT", img: "img/certificados/JSON - Microsoft.png", tags: ["c#", "back end"] },
+	{ id: 19, titulo: "Introdução à Análise de Dados - MICROSOFT", img: "img/certificados/Introdução Analise de Dados - Microsoft.png", tags: ["bi", "microsoft"] },
+	{ id: 20, titulo: "Projeto de Sistemas de TI - MICROSOFT", img: "img/certificados/Projeto de Sistemas de TI - Microsfot.png", tags: ["engenharia", "microsoft"] },
+	{ id: 21, titulo: "Selo ASP NET - MICROSOFT", img: "img/certificados/Selo ASP NET Microsoft.png", tags: ["ASP", "microsoft"] },
+	{ id: 22, titulo: "HTML e CSS - ALURA", img: "img/certificados/HTML e CSS Alura.png", tags: ["HTML", "CSS", "front End", "Alura"] },
+	{ id: 23, titulo: "Imersão DEV - ALURA", img: "img/certificados/Imersao Dev 9 Edição.png", tags: ["Imersão", "front End", "Alura"] },
+	{ id: 24, titulo: "Imersao Dev BackEnd - ALURA", img: "img/certificados/Imersao Dev BackEnd.png", tags: ["back end", "Alura"] },
+	{ id: 25, titulo: "Git e GitHub - UDEMY", img: "img/certificados/Git e GitHub.png", tags: ["git", "github", "UDEMY"] },
+	{ id: 26, titulo: "Jornada Pyton - Hastag  Treinamentos", img: "img/certificados/Pyton Hashtag.png", tags: ["Pyton", "Hastagh Treinamentos"] },
+	{ id: 27, titulo: "Innovative Educator - MICROSOFT", img: "img/certificados/Innovative Educator.png", tags: ["educacional", "microsoft"] },
+	
 ];
 
 const listaExperiencias = [
@@ -180,6 +190,9 @@ export default function Home() {
 								<div><h4 className="font-black text-blue-600 uppercase text-xs mb-3 tracking-widest">Resumo Profissional</h4><p className="text-slate-600 text-lg leading-relaxed text-justify">{resumoProfissional}</p></div>
 								<div className="h-[1px] bg-slate-100 w-full"></div>
 								<div><h4 className="font-black text-blue-600 uppercase text-xs mb-3 tracking-widest">Vida Pessoal & Hobbies</h4><p className="text-slate-600 text-lg leading-relaxed text-justify">{hobbiesDetalhado}</p></div>
+								
+								
+							
 							</div>
 						</motion.div>
 					</motion.div>
