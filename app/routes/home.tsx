@@ -52,7 +52,7 @@ const listaCertificados = [
 
 const listaExperiencias = [
 	{
-		empresa: "Guimepa", periodo: "2021 – Atualmente", cargo: "ASSISTENTE DE TI SÊNIOR / DESENVOLVEDOR FULL STACK JR",
+		empresa: "Guimepa Suprimentos", periodo: "2021 – Atualmente", cargo: "ASSISTENTE DE TI SÊNIOR / DESENVOLVEDOR FULL STACK JR",
 		resumo: "Gestão tecnológica total, integração de APIs e desenvolvimento de BI.",
 		descricao: "Na empresa, cuido de toda a parte tecnológica, desde hardware até software. Faço a integração de APIs dos fornecedores no sistema e já integrei Vonder, Toyama, Wap, Belfix, Bovenau, CSM, entre outros. Também sou responsável por personalizar o sistema, fazer melhorias, adicionar funções, botões, colunas, filtros... Cuido do site de vendas usando Magento e, recentemente, criei o novo site deltatopferramentas.com.br. Além disso, faço o desenvolvimento e a análise de BI com a ferramenta PowerBI, criando dashboards conforme a necessidade dos setores. Quando é necessário, também auxilio na parte gráfica, criando artes para posts no Instagram, Facebook, LinkedIn, e com anúncios no Google Ads."
 	},
@@ -97,11 +97,11 @@ export default function Home() {
 				<svg className="w-8 h-8 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.6-2.8-23.6-8.7-45-27.7-16.6-14.8-27.8-33.1-31.1-38.6-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.6-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" /></svg>
 			</a>
 
-			{/* NAV COM ÍCONES */}
+			{/* NAV COM ÍCONES RESTAURADOS */}
 			<nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 py-4 px-8 flex justify-between items-center uppercase font-black text-[10px] tracking-[0.2em]">
 				<span className="text-blue-600 text-2xl tracking-tighter uppercase font-bold">DEV FULL STACK</span>
 				<ul className="flex gap-8 items-center text-slate-400">
-					<li><a href="#sobre" className="hover:text-blue-600">Sobre</a></li>
+					<li><a href="#sobre" className="hover:text-blue-600 transition-colors">Sobre</a></li>
 					<li><a href="#formacao">Formação</a></li>
 					<li><a href="#certificados">Certificados</a></li>
 					<li><a href="#experiencia">Experiência</a></li>
@@ -124,14 +124,14 @@ export default function Home() {
 						<div className="absolute bottom-6 right-6 bg-green-500 w-10 h-10 rounded-full border-8 border-white animate-pulse"></div>
 					</motion.div>
 					<div className="flex-1 overflow-hidden">
-						<h1 className="text-2xl lg:text-4xl font-black tracking-tighter leading-none mb-6 uppercase whitespace-nowrap">Leonardo de Paula</h1>
+						<h1 className="text-2xl lg:text-4xl font-black tracking-tighter leading-none mb-6 uppercase whitespace-nowrap text-slate-900">Leonardo de Paula</h1>
 						<p className="text-3xl text-blue-600 font-bold min-h-[40px] mb-8 tracking-tight italic uppercase"><Typewriter texts={["Full Stack Developer", "BI Specialist", "Curitiba/PR", `${idade} Anos`]} /></p>
 						<p className="text-slate-400 text-xl font-medium leading-relaxed max-w-2xl text-justify mb-8">Atuo com tecnologia desde 2009. Especialista em resolver problemas complexos através do código com foco em Full Stack e BI.</p>
 						<button onClick={() => setShowAboutModal(true)} className="bg-blue-600 text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-700 transition-all hover:scale-105 shadow-xl shadow-blue-600/20">Ver mais sobre mim</button>
 					</div>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 text-center">
-					{[{ v: "+1.000", t: "Projetos" }, { v: `${anosExp} ANOS`, t: "Experiência" }, { v: "+50", t: "Certificações" }].map((stat, i) => (
+					{[{ v: "+100", t: "Projetos" }, { v: `${anosExp} ANOS`, t: "Experiência" }, { v: "+50", t: "Certificações" }].map((stat, i) => (
 						<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.2 }} className="bg-white p-12 rounded-[48px] shadow-sm border border-slate-100 hover:shadow-xl transition-all">
 							<span className="block text-5xl font-black text-blue-600 mb-2 uppercase">{stat.v}</span>
 							<span className="text-slate-400 font-bold uppercase text-xs tracking-widest">{stat.t}</span>
@@ -142,16 +142,33 @@ export default function Home() {
 
 			<Formacao graduacoes={graduacoes} />
 
-			{/* SEÇÃO ÚNICA DE CERTIFICADOS COM BUSCA E TAGS INTEGRADAS */}
-			<Certificados
-				certificados={listaCertificados}
-				onSelect={setSelectedCert}
-			/>
+			{/* SEÇÃO ÚNICA DE CERTIFICADOS COM FILTROS INTEGRADOS */}
+			<Certificados certificados={listaCertificados} onSelect={setSelectedCert} />
 
 			<Experiencia experiencias={listaExperiencias} onSelect={setSelectedExp} />
+
 			<Skills skills={listaSkills} />
 
-			{/* MODAL SOBRE MIM */}
+			{/* SEÇÃO POWER BI ADAPTADA (SUAVE E SEM BORDAS) */}
+			<section id="projetos-bi" className="py-24 bg-slate-50 px-6">
+				<div className="max-w-7xl mx-auto">
+					<motion.h2 initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="text-5xl font-black mb-16 flex items-center gap-6 text-slate-800 uppercase tracking-tighter">
+						<span className="w-16 h-2 bg-blue-600 rounded-full"></span>Projetos Power BI
+					</motion.h2>
+
+					<motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative w-full overflow-hidden shadow-xl" style={{ aspectRatio: '16 / 9' }}>
+						<iframe
+							title="Projetos Power BI"
+							className="absolute top-0 left-0 w-full h-full border-0"
+							src="https://app.powerbi.com/view?r=eyJrIjoiNTJiZjUwMmYtNzg3ZS00ZWQ5LWE1MmUtODgyNmZlNGYwMmIwIiwidCI6ImI3Yzk2N2UyLWU2NDEtNDU0My05ZDUyLTNiMjFlMmJkNjA2NSJ9"
+							allowFullScreen={true}
+							loading="lazy"
+						></iframe>
+					</motion.div>
+				</div>
+			</section>
+
+			{/* MODAIS (CERTIFICADOS, CARREIRA E SOBRE) */}
 			<AnimatePresence>
 				{showAboutModal && (
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowAboutModal(false)} className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-6 cursor-zoom-out">
@@ -169,11 +186,10 @@ export default function Home() {
 				)}
 			</AnimatePresence>
 
-			{/* MODAL CERTIFICADO INDIVIDUAL */}
 			<AnimatePresence>
 				{selectedCert && (
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedCert(null)} className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 cursor-zoom-out">
-						<motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} exit={{ scale: 0.8 }} onClick={(e) => e.stopPropagation()} className="relative max-w-5xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl cursor-default">
+						<motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} exit={{ scale: 0.8 }} onClick={(e) => e.stopPropagation()} className="relative max-w-5xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl">
 							<button onClick={() => setSelectedCert(null)} className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/10 rounded-full flex items-center justify-center text-black font-bold">✕</button>
 							<img src={selectedCert.img} alt={selectedCert.titulo} className="w-full h-auto max-h-[80vh] object-contain" />
 							<div className="p-6 bg-white text-center font-black uppercase tracking-widest">{selectedCert.titulo}</div>
@@ -182,7 +198,6 @@ export default function Home() {
 				)}
 			</AnimatePresence>
 
-			{/* MODAL CARREIRA INDIVIDUAL */}
 			<AnimatePresence>
 				{selectedExp && (
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedExp(null)} className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-6 cursor-zoom-out">
